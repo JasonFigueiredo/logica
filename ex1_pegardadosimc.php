@@ -28,9 +28,9 @@ if(isset($_POST["btn_enviar"])){
 </head>
 <body>
     <form action="ex1_pegardadosimc.php" method="post">
-        <input name="nome" value="<?= isset($nome)? $nome : ""  ?>" placeholder="Digite um Valor" >
-        <input name="peso" value="<?= isset($peso)? $peso : ""  ?>" placeholder="Digite um Valor" >
-        <input name="altura" value="<?= isset($altura)? $altura : ""  ?>" placeholder="Digite um Valor" >
+        <input name="nome" value="<?= isset($nome) ? $nome : ""  ?>" placeholder="Digite um Valor" >
+        <input name="peso" value="<?= isset($peso) ? $peso : ""  ?>" placeholder="Digite um Valor" >
+        <input name="altura" value="<?= isset($altura) ? $altura : ""  ?>" placeholder="Digite um Valor" >
         <button name="btn_enviar">Enviar</button>
     </form>
 </body>
