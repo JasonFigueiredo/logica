@@ -1,42 +1,38 @@
 <?php
-if(isset($_POST["btn_enviar"]))
- {
-    $nome = $_POST["nome_empresa"];
-    $site = $_POST["site"];
-    $face = $_POST["face"];
-    $insta = $_POST["insta"];
-    $descricao = $_POST["descricao"];
+    if(isset($_POST["btn_enviar"])){
+        $nome_empresa = $_POST["nome_empresa"];
+        $site = $_POST["site"];    
+        $face = $_POST["face"];    
+        $insta = $_POST["insta"];    
+        $descr = $_POST["desc"];    
 
-    echo "Nome da empresa é: " . $nome .
-     "<br>site: " . $site .
-      "<br>face: " . $face .
-       "<br>insta: " . $insta .
-        "<br>descricao: " . $descricao;
-}
+        echo "Nome da empresa é: " . $nome_empresa . "<br>" .
+         "Site da empresa: " . $site . "<br>" .
+         "Facebook da empresa: " . $face . "<br>" .
+         "Instagram da empresa: " . $insta . "<br>" .
+         "Descrição da empresa: " . $descr;
+    }
 ?>
 <!DOCTYPE html>
-<html lang="PT-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Industria</title>
+    <title>Cadastro Empresa</title>
 </head>
-
 <body>
-    <form method="post" action="ex2_formulario.php">
-        <label>Nome da Empresa:</label>
-        <input name="nome_empresa" placeholder="Digite aqui...">
-        <label>Site:</label>
-        <input name="site" placeholder="Digite aqui...">
-        <label>Facebook:</label>
-        <input name="face" placeholder="Digite aqui...">
-        <label>Instagran:</label>
-        <input name="insta" placeholder="Digite aqui...">
+    <form action="ex2_formulario.php" method="post">
+        <label>Nome da empresa:</label>
+        <input type="text" name="nome_empresa"><br>
+        <label>Site: </label>
+        <input type="text" name="site"><br>
+        <label>Facebook: </label>
+        <input type="text" name="face"><br>
+        <label>Instagram: </label>
+        <input type="text" name="insta"><br>
         <label>Descrição:</label>
-        <input name="descricao" placeholder="Digite aqui...">
-        <button name="btn_enviar">Enviar</button>
+        <input type="text" name="desc"><br>
+        <button name="btn_enviar"> Enviar dados </button>
     </form>
 </body>
-
 </html>
