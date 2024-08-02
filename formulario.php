@@ -9,6 +9,7 @@
         
         echo "Meu nome é: <br>" . $nome . "<br>" . "Moro na rua:<br>" . $rua . "<br>" . 
         "No Bairro:<br>" . $bairro . "<br>" . "No Cep:<br>" . $cep . "<br>" . "No numero:<br>" . $num;
+
     }
 ?>
 

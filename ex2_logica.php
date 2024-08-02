@@ -33,6 +33,7 @@ if(isset($_POST["btn_somar"]))
     <title>9 digitos "oloko"</title>
 </head>
     <body>
+        <h1>Calculadora de Divisão de 9 Digitos</h1>
         <form action="ex2_logica.php" method="post">
             <label>Numero 01:</label>
             <input placeholder="Numero 1" name="n1" value="<?= $num1 ?>"><br>

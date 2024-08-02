@@ -82,7 +82,7 @@
    $lucronov = ($wnov - $lnov);
    $lucrodez = ($wdez - $ldez);
 
-   $ganhoano = ($wjan+
+   $ganhoano = ( $wjan
    +$wfev+
    +$wmar+
    +$wabr+
@@ -94,7 +94,8 @@
    +$wout+
    +$wnov+
    +$wdez); 
-   $percaano = (+$lfev
+   $percaano = ( $ljan 
+   + $lfev +
    + $lmar +
    + $labr +
    + $lmai +
@@ -106,7 +107,7 @@
    + $lnov +
    + $ldez);
 
-   $lucroano =($lucrojan +
+   $lucroano = ( $lucrojan 
    + $lucrofev +
    + $lucromar +
    + $lucroabr +
