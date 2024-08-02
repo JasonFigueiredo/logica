@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST[button_enviar])){
+if(isset($_POST["button_enviar"])){
 
     $nota1 = trim($_POST["nota1"]);
     $nota2 = trim($_POST["nota2"]);
@@ -8,20 +8,17 @@ if(isset($_POST[button_enviar])){
     $nota4 = trim($_POST["nota4"]);
 
     if($nota1 == "" || $nota2 == "" || $nota3 == "" || $nota4 == ""){
-        echo "Preencer todos os campos das notas"
+        echo "Preencer todos os campos das notas";
     } else {
     
         $media= ($nota1 + $nota2 + $nota3 + $nota4) / 4;
         $classificação = "";    
     
-        if ($media >= 0 && $media <= 39) {
-            $classificação
+        if ($media >= 0 && $media <= 39){echo "";
         }
 
     }
 }
-
-
 ?>
 
 

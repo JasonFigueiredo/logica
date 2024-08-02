@@ -1,3 +1,4 @@
+<!-- Atividade Finalizada -->
 <?php
     if(isset($_POST['btn_enviar'])){
 
@@ -8,12 +9,8 @@
         $num = $_POST["numero"];
         
         echo "Meu nome é: <br>" . $nome . "<br>" . "Moro na rua:<br>" . $rua . "<br>" . 
-        "No Bairro:<br>" . $bairro . "<br>" . "No Cep:<br>" . $cep . "<br>" . "No numero:<br>" . $num;
-
-    }
+        "No Bairro:<br>" . $bairro . "<br>" . "No Cep:<br>" . $cep . "<br>" . "No numero:<br>" . $num; }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br"> 
 <head>

@@ -1,3 +1,4 @@
+<!-- Atividade Finalizada -->
 <?php
  $wjan = "";
  $wfev = "";

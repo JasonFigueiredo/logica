@@ -1,3 +1,4 @@
+<!-- Atividade Finalizada -->
 <?php
 $num1 = '';
 $num2 = '';

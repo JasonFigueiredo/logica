@@ -1,3 +1,4 @@
+<!-- Atividade Finalizada -->
 <?php
     if(isset($_POST["btn_enviar"])){
         $nome_empresa = $_POST["nome_empresa"];

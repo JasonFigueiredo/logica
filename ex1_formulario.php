@@ -1,3 +1,4 @@
+<!-- Atividade Finalizada -->
 <?php
     if(isset($_GET["btn_enviar"])){
         $nome = $_GET["nome_prato"];
