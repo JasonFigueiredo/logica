@@ -1,3 +1,4 @@
+<!-- Atividade Finalizada -->
 <?php
 
     $n1 = "";
@@ -7,7 +8,8 @@
         $n1 = $_POST["n1"];
         $n2 = $_POST["n2"];
 // Verificar se os meu campos estão preenchidos e se são iguais ou diferentes.
-        if ($n1 == "" || $n2 == ""){ echo "Preencha o campo vazio"; }
+        if ($n1 == ""){ echo "Preencha o 1º campo vazio" . "</br>"; }
+        else if ($n2 == "") {echo "Preencha o 2º campo vazio"; }
 
         if ($n1 > $n2){ echo "O Numero 1 é maior que o 2"; }
         else if ($n2 > $n1){ echo "O Numero 2 é maior que o 1"; }
