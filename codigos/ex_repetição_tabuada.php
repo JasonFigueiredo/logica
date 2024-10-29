@@ -7,8 +7,8 @@ if(isset($_POST["btn_calcular"])){
     else {
         for ($i=1; $i<=$ir_ate; $i++){
         $calculo = $tabuada * $i;
-        echo "$tabuada X $i = $calculo" . "\n";
-            $mostrar = $ir_ate . "$tabuada X $i = $calculo";
+        echo "$tabuada x $i = $calculo" . '<br>' ;
+            $mostrar = $ir_ate . "$tabuada x $i = $calculo";
         }
     }
 }
@@ -23,15 +23,10 @@ if(isset($_POST["btn_calcular"])){
 <body>
     <form action="ex_repetição_tabuada.php" method="post">
         <label>Tabuada: </label>
-        <input name="tabuada" value="<?=isset($tabuada)?$tabuada:""?>">
+        <input name="tabuada" value="<?=isset($tabuada)?$tabuada:""?>"><br>
         <label>Ir Até: </label>
-        <input name="ir_ate" value=" <?=isset($ir_ate)?$ir_ate:""?>">
+        <input name="ir_ate" value=" <?=isset($ir_ate)?$ir_ate:""?>"><br>
         <button name="btn_calcular">Calcular</button>
     </form>
-
-    <?php if (isset($_mostrar)) { ?>
-        <textarea disabled rows ="<? $ir_ate ?>"> <?= $mostrar ?> </textarea>
-    <?php } ?>
-
 </body>
 </html>
