@@ -3,10 +3,10 @@ require_once "funcao/fnc_exemplo.php";
 $qtd = "";
 $valor  = "";
 
-if(isset($_POST[btn_calcular])){
- $nome = trim($_post())
-
-
+if(isset($_POST['btn_calcular'])){
+    $nome = trim($_POST['nome']);
+    $valor = $_POST['valor'];
+    $qtd = $_POST['qtd'];
 }
 ?>
 <!DOCTYPE html>
